@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(240, 240, 240);
+  width: 1000px;
+  height: 1000px;
+  padding: 4em;
+  border: 2px solid rgba(0, 0, 0, 0.281);
+  border-radius: 1em;
+}
+
+.container h1 {
+  font-weight: 400;
+}
+
+.input_box {
+  margin-top: 2em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input_box input {
+  height: 75%;
+  width: 500px;
+  padding: 1rem 1rem;
+  font-size: 1.5em;
+  border: 1px solid rgb(102, 206, 98);
+  border-radius: 2.5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input_box input:focus {
+  outline: none;
+}
+
+.input_box button {
+  display: flex;
+  align-items: center;
+  height: 75%;
+  padding: 1rem 1rem;
+  background: none;
+  font-size: 1.1em;
+  border: 1px solid rgb(102, 206, 98);
+  border-left: none;
+  border-radius: 2.5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  cursor: pointer;
+  color: rgb(102, 206, 98);
+  transition: all 0.15s;
+}
+
+.input_box button:hover {
+  background: white;
+}
+
+.todo_item {
+  margin-top: 2em;
+  width: 650px;
+  display: none;
+  justify-content: space-evenly;
+  transition: all 0.5s;
+  color: rgba(0, 0, 0, 0.377);
+  padding: 0.5em 0em;
+  padding-left: 1em;
+}
+
+.todo_item h2 {
+  margin-right: auto;
+  font-weight: 400;
+}
+
+.todo_item .buttons {
+  width: 125px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.todo_item button {
+  cursor: pointer;
+  width: 22.5px;
+  height: 22.5px;
+  background: none;
+  border: none;
+  border-radius: 50%;
+}
+
+.todo_item button img {
+  width: 100%;
+  height: 100%;
+}
+
+.none {
+  display: none;
+}
