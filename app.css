@@ -85,7 +85,7 @@ html {
   display: none;
   justify-content: space-evenly;
   transition: all 0.5s;
-  color: rgba(0, 0, 0, 0.377);
+  color: rgba(0, 0, 0, 0.750);
   padding: 0.5em 0em;
   padding-left: 1em;
 }
